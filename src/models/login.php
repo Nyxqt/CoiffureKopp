@@ -9,10 +9,12 @@ if (isset($_POST['email']) && !empty($_POST['email']) && isset($_POST['password'
     $query->bindValue(":email", $email, PDO::PARAM_STR);
     $query->execute();
     $admin = $query->fetch();
-    if ($email == $admin['email'] && password_verify($password, $admin['password'])) {
-        $_SESSION['email'] = $email;
-        header('location: index.php');
-    } else {
+    if ($admin == false || is_null($admin)) {
         $msg = "Identifiant ou mot de passe invalide!";
+    } else {
+        if ($email == $admin['email'] && password_verify($password, $admin['password'])) {
+            $_SESSION['email'] = $email;
+            header('location: index.php');
+        }
     }
 }

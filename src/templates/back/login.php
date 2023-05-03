@@ -31,6 +31,12 @@
 
                                 <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="#!">Mot de passe oublié?</a></p>
 
+                                <div class="alert alert-danger mb-5 alert-dismissible <?php if ($msg == '') {
+                                                                                            echo 'visually-hidden';
+                                                                                        } ?>" role="alert">
+                                    <?= $msg ?>
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                </div>
                                 <button name="submit" class="btn btn-outline-warning btn-lg px-5" type="submit">Connexion</button>
                             </form>
                         </div>
@@ -43,4 +49,4 @@
 </section>
 
 <?php $content = ob_get_clean(); ?>
-<?php require('layout.php') ?>
+<?php require('layoutLogin.php') ?>
