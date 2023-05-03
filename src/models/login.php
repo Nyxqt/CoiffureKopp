@@ -15,6 +15,8 @@ if (isset($_POST['email']) && !empty($_POST['email']) && isset($_POST['password'
         if ($email == $admin['email'] && password_verify($password, $admin['password'])) {
             $_SESSION['email'] = $email;
             header('location: index.php');
+        } else {
+            $msg = "Identifiant ou mot de passe invalide!";
         }
     }
 }
