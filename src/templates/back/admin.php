@@ -13,7 +13,6 @@
                 <tr>
                     <th scope="col">#</th>
                     <th scope="col">Mail</th>
-                    <th scope="col">Pseudo</th>
                     <th scope="col">Action</th>
                 </tr>
             </thead>
@@ -22,7 +21,6 @@
                     <tr>
                         <th scope="row"><?= $admin['id'] ?></th>
                         <td><?= $admin['email'] ?></td>
-                        <td><?= $admin['username'] ?></td>
                         <td><a class="btn btn-warning" href="index.php?action=updAdmin&id=<?= $admin['id'] ?>" role="button">
                                 <span>Modifier</span><i class="fa-solid fa-user-gear ms-2"></i></a>
                             <a class="btn btn-danger" href="index.php?action=delAdmin&id=<?= $admin['id'] ?>" onclick="return(confirm('Voulez-vous supprimer cette entrée ?'));" role="button">
