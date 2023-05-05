@@ -11,12 +11,14 @@ if (isset($_POST['email']) && !empty($_POST['email']) && isset($_POST['password'
     $admin = $query->fetch();
     if ($admin == false || is_null($admin)) {
         $msg = "Identifiant ou mot de passe invalide!";
+        exit;
     } else {
         if ($email == $admin['email'] && password_verify($password, $admin['password'])) {
             $_SESSION['email'] = $email;
             header('location: index.php');
         } else {
             $msg = "Identifiant ou mot de passe invalide!";
+            exit;
         }
     }
 }

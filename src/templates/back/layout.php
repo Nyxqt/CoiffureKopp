@@ -59,9 +59,9 @@
                     </a>
                 </li>
                 <li>
-                    <a href="index.php?action=picture&p=1" class="nav-link  hover_yellow">
+                    <a href="index.php?action=addContent" class="nav-link  hover_yellow">
                         <i class="fa-solid fa-image"></i>
-                        Images
+                        Contenu
                     </a>
                 </li>
                 <li>

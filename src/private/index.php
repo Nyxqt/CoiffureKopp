@@ -22,6 +22,12 @@ if (isset($_SESSION['email'])) {
                 require('../controllers/back/delAdmin.php');
                 delAdmin($id);
             }
+        } elseif ($_GET['action'] == 'content') {
+            require('../controllers/back/admin.php');
+            admin();
+        } elseif ($_GET['action'] == 'addContent') {
+            require('../controllers/back/addContent.php');
+            createContent($msg);
         }
     } else {
         require('../controllers/back/dashboard.php');

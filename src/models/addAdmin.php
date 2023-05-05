@@ -8,9 +8,11 @@ if (isset($_POST['submit'])) {
         || (!isset($_POST['pwconfirm']) || empty($_POST['pwconfirm']))
     ) {
         $msg = 'Veuillez compléter tout les champs.';
+        exit;
     }
     if (($_POST['pw']) <> ($_POST['pwconfirm'])) {
         $msg = 'Les mots de passe ne sont pas identiques';
+        exit;
     } else {
         $email = secureInput($_POST['email']);
         $password = password_hash($_POST['pw'], PASSWORD_DEFAULT);
