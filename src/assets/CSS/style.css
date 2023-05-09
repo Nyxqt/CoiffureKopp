@@ -65,3 +65,7 @@ left: 0;
 .test {
     height: 1600px;
 }
+
+.carousel {
+    height: 10em;
+}
