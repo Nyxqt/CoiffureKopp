@@ -33,13 +33,13 @@ nav {
 	padding-bottom: 200px;
 }
 
-a {
+.nav-style {
 color: #fff;
 display: inline-block;
 position: relative;
 }
 
-a:after {    
+.nav-style:after {    
 background: none repeat scroll 0 0 transparent;
 bottom: 0;
 content: "";
@@ -52,7 +52,7 @@ transition: width 0.3s ease 0s, left 0.3s ease 0s;
 width: 0;
 }
 
-a:hover:after { 
+.nav-style:hover:after { 
 width: 100%; 
 left: 0; 
 }
@@ -121,4 +121,15 @@ transform: skew(-25deg) translateX(-50%);
 background: rgba(31, 228, 97, 0.576);
 z-index: -1;
 }
+
+.parallax {
+    background-image: url("../images/parallax2.jpg");
+  
+    min-height: 100px;
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 

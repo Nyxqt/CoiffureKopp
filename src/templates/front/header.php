@@ -8,19 +8,19 @@
         <div class="collapse navbar-collapse d-flex" id="navbarCollapse">
             <ul class="navbar-nav justify-content-around w-100 text-white">
                 <li class="nav-item">
-                    <a class="nav-link title-ff title-fs" href="#">Le salon</a>
+                    <a class="nav-link title-ff title-fs nav-style" href="#">Le salon</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link title-ff title-fs" href="#">L'équipe</a>
+                    <a class="nav-link title-ff title-fs nav-style" href="#">L'équipe</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link title-ff title-fs" href="#">Portfolio</a>
+                    <a class="nav-link title-ff title-fs nav-style" href="#">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link title-ff title-fs" href="#">Actualité</a>
+                    <a class="nav-link title-ff title-fs nav-style" href="#">Actualité</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link title-ff title-fs" href="#">Contact</a>
+                    <a class="nav-link title-ff title-fs nav-style" href="#">Contact</a>
                 </li>
             </ul>
         </div>
