@@ -66,6 +66,20 @@
     </div>
 </section>
 <!-- REMINDER NEWS -->
-
+<section>
+    <div class="container-md mt-5">
+        <h1 class="title-ff text-center">
+            Nos actualités
+        </h1>
+        <p class="text-ff fs-4 text-center text-italic">
+            Les dernières actualités du salon et aussi les tendances du monde de la coiffure
+        </p>
+        <div class="row mt-5">
+            <div class="col-md-4">TEST</div>
+            <div class="col-md-4">TEST</div>
+            <div class="col-md-4">TEST</div>
+        </div>
+    </div>
+</section>
 <?php $content = ob_get_clean(); ?>
 <?php require('layout.php') ?>

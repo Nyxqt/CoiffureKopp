@@ -133,3 +133,6 @@ z-index: -1;
     background-size: cover;
   }
 
+.text-italic {
+    font-style: italic;
+}
