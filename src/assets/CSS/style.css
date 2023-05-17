@@ -30,12 +30,13 @@ nav {
 }
 
 #body-wrapper {
-	padding-bottom: 200px;
+	padding-bottom: 350px;
 }
 
 .nav-style {
 color: #fff;
 display: inline-block;
+text-decoration: none;
 position: relative;
 }
 
@@ -135,4 +136,32 @@ z-index: -1;
 
 .text-italic {
     font-style: italic;
+}
+
+footer {
+    width: 100%;
+}
+
+.footer-style {
+color: #fff;
+display: inline-block;
+position: relative;
+}
+
+.footer-style:after {    
+background: none repeat scroll 0 0 transparent;
+bottom: 0;
+content: "";
+display: block;
+height: 2px;
+left: 15%;
+position: absolute;
+background: #fff;
+transition: width 0.3s ease 0s, left 0.3s ease 0s;
+width: 0;
+}
+
+.footer-style:hover:after { 
+width: 30%; 
+left: 0; 
 }

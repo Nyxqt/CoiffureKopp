@@ -75,9 +75,18 @@
             Les dernières actualités du salon et aussi les tendances du monde de la coiffure
         </p>
         <div class="row mt-5">
-            <div class="col-md-4">TEST</div>
-            <div class="col-md-4">TEST</div>
-            <div class="col-md-4">TEST</div>
+            <?php foreach ($news as $news3) { ?>
+
+                <div class="col-md-4">
+                    <div class="card rounded">
+                        <img class="img-fluid" src="<?= $news3['news_img'] ?>" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title text-ff fs-4"><?= $news3['news_title'] ?></h5>
+                            <a href="index.php?action=news&id=<?= $news3['news_id'] ?>" class="btn btn-dark text-ff">Voir l'article</a>
+                        </div>
+                    </div>
+                </div>
+            <?php } ?>
         </div>
     </div>
 </section>
