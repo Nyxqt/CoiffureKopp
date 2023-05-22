@@ -2,14 +2,14 @@
 
 <div class="container-fluid bg-dark pb-3">
     <div class="row justify-content-center">
-        <div class="col-lg-3 d-flex flex-column">
+        <div class="col-lg-3 d-flex flex-column text-end">
             <h1 class="title-ff text-white uppercase">Coiffure kopp</h1>
             <span class="text-ff text-white">Salon de coiffure à Saint-Avold</span>
             <span class="text-ff text-white">63 Rue du Général Hirschauer</span>
             <span class="text-ff text-white">57500 Saint-Avold</span>
             <span class="text-ff text-white">03 87 92 83 68</span>
         </div>
-        <div class="col-lg-3 d-flex flex-column">
+        <div class="col-lg-3 d-flex flex-column text-center">
             <h1 class="title-ff text-white uppercase">Horaires d'ouverture</h1>
             <span class="text-ff text-white">Lundi : Fermé</span>
             <span class="text-ff text-white">Mardi : de 08h à 18h</span>
@@ -22,7 +22,11 @@
         </div>
         <div class="col-lg-3 d-flex flex-column">
             <h1 class="title-ff text-white uppercase">A propos</h1>
+            <a class="nav-link footer-style text-white text-ff" href="">Le salon</a>
             <a class="nav-link footer-style text-white text-ff" href="">L'équipe</a>
+            <a class="nav-link footer-style text-white text-ff" href="">Portfolio</a>
+            <a class="nav-link footer-style text-white text-ff" href="">Actualité</a>
+            <a class="nav-link footer-style text-white text-ff" href="">Contact</a>
         </div>
     </div>
 </div>
