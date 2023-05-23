@@ -16,6 +16,10 @@ nav {
     font-family: 'Indie Flower', cursive;
 }
 
+.highlight-ff {
+    font-family: 'Josefin Sans', sans-serif;;
+}
+
 .title-fs {
     font-size: 3em;
 }
@@ -123,16 +127,23 @@ background: rgba(31, 228, 97, 0.576);
 z-index: -1;
 }
 
-.parallax {
+.parallax-homepage {
     background-image: url("../images/parallax2.jpg");
-  
     min-height: 100px;
-  
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-  }
+    background-size: cover; 
+}
+
+.parallax-salon {
+    background-image: url("../images/salon_highlight.jpg");
+    min-height: 100px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; 
+}
 
 .text-italic {
     font-style: italic;
@@ -164,4 +175,8 @@ width: 0;
 .footer-style:hover:after { 
 width: 30%; 
 left: 0; 
+}
+
+#salon-highlight {
+    height: 30vh;
 }

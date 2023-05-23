@@ -45,7 +45,7 @@
 </section>
 <!-- CTA -->
 <section>
-    <div class="container-md mt-5 parallax">
+    <div class="container-md mt-5 parallax-homepage">
         <div class="row justify-content-end p-3">
             <div class="col-md-6 text-center">
                 <h1 class="title-ff text-white">

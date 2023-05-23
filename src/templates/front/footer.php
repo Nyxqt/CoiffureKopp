@@ -22,7 +22,7 @@
         </div>
         <div class="col-lg-3 d-flex flex-column">
             <h1 class="title-ff text-white uppercase">A propos</h1>
-            <a class="nav-link footer-style text-white text-ff" href="">Le salon</a>
+            <a class="nav-link footer-style text-white text-ff" href="index.php?action=salon">Le salon</a>
             <a class="nav-link footer-style text-white text-ff" href="">L'équipe</a>
             <a class="nav-link footer-style text-white text-ff" href="">Portfolio</a>
             <a class="nav-link footer-style text-white text-ff" href="">Actualité</a>

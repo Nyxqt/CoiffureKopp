@@ -7,7 +7,7 @@
         </button>
         <div class="collapse navbar-collapse d-flex flex-column" id="navbarCollapse">
             <a class="navbar-brand" href="index.php">
-                <img src="../assets/images/placeholder.jpg" alt="Logo" width="60" height="60" class="d-inline-block align-text-top">
+                <img src="../assets/images/placeholder.jpg" alt="Logo" width="60" height="60" class="mt-3">
             </a>
             <ul class="navbar-nav justify-content-around w-100 text-white">
                 <li class="nav-item">
