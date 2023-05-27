@@ -8,6 +8,9 @@ if (isset($_GET['action'])) {
     } elseif ($_GET['action'] == 'salon') {
         require('../controllers/front/salon.php');
         salon();
+    } elseif ($_GET['action'] == 'equipe') {
+        require('../controllers/front/equipe.php');
+        equipe();
     }
 } else {
     require('../controllers/front/homepage.php');
