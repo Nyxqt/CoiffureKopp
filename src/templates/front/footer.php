@@ -1,15 +1,15 @@
 <?php ob_start(); ?>
 
 <div class="container-fluid bg-dark pb-3">
-    <div class="row justify-content-center">
-        <div class="col-lg-3 d-flex flex-column text-end">
+    <div class="row justify-content-center text-center">
+        <div class="col-lg-3 d-flex flex-column">
             <h1 class="title-ff text-white uppercase">Coiffure kopp</h1>
             <span class="text-ff text-white">Salon de coiffure à Saint-Avold</span>
             <span class="text-ff text-white">63 Rue du Général Hirschauer</span>
             <span class="text-ff text-white">57500 Saint-Avold</span>
             <span class="text-ff text-white">03 87 92 83 68</span>
         </div>
-        <div class="col-lg-3 d-flex flex-column text-center">
+        <div class="col-lg-3 d-flex flex-column">
             <h1 class="title-ff text-white uppercase">Horaires d'ouverture</h1>
             <span class="text-ff text-white">Lundi : Fermé</span>
             <span class="text-ff text-white">Mardi : de 08h à 18h</span>

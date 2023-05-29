@@ -11,6 +11,14 @@ if (isset($_GET['action'])) {
     } elseif ($_GET['action'] == 'equipe') {
         require('../controllers/front/equipe.php');
         equipe();
+    } elseif ($_GET['action'] == 'actualite') {
+        require('../controllers/front/actualite.php');
+        actualite();
+    } elseif ($_GET['action'] == 'post') {
+        if (isset($_GET['id'])) {
+            require('../controllers/front/actualite.php');
+            post();
+        }
     }
 } else {
     require('../controllers/front/homepage.php');
