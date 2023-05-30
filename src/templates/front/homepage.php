@@ -22,8 +22,8 @@
     </div>
 </section>
 <!-- MAIN CONTENT -->
-<section>
-    <div class="container-md mt-5">
+<section class=" mt-5">
+    <div class="container-md">
         <div class="row">
             <div class="col-md-6 text-center">
                 <h1 class="title-ff">
@@ -44,8 +44,8 @@
     </div>
 </section>
 <!-- CTA -->
-<section>
-    <div class="container-md mt-5 parallax-homepage">
+<section class=" mt-5">
+    <div class="container-md parallax-homepage">
         <div class="row justify-content-end p-3">
             <div class="col-md-6 text-center">
                 <h1 class="title-ff text-white">
@@ -66,8 +66,8 @@
     </div>
 </section>
 <!-- REMINDER NEWS -->
-<section>
-    <div class="container-md mt-5">
+<section class=" mt-5">
+    <div class="container-md">
         <h1 class="title-ff text-center">
             Nos actualités
         </h1>

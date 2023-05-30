@@ -7,5 +7,5 @@ require_once('../models/post.php');
 function post()
 {
     $post = getPostData();
-    require('../templates/front/actualite.php');
+    require('../templates/front/post.php');
 }

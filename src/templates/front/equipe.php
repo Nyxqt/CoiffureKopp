@@ -8,8 +8,8 @@
     </div>
 </section>
 <!-- MAIN CONTENT -->
-<section>
-    <div class="container-lg mt-5">
+<section class=" mt-5">
+    <div class="container-lg">
         <div class="row justify-content-between">
             <div class="col-sm-12 col-lg-3 text-center">
                 <picture class="member-img">

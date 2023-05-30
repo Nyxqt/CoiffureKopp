@@ -12,12 +12,12 @@ if (isset($_GET['action'])) {
         require('../controllers/front/equipe.php');
         equipe();
     } elseif ($_GET['action'] == 'actualite') {
-        require('../controllers/front/actualite.php');
-        actualite();
-    } elseif ($_GET['action'] == 'post') {
         if (isset($_GET['id'])) {
-            require('../controllers/front/actualite.php');
+            require('../controllers/front/post.php');
             post();
+        } else {
+            require('../controllers/front/actualite.php');
+            actualite();
         }
     }
 } else {
