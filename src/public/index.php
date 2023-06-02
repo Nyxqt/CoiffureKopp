@@ -19,6 +19,9 @@ if (isset($_GET['action'])) {
             require('../controllers/front/actualite.php');
             actualite();
         }
+    } elseif ($_GET['action'] == 'contact') {
+        require('../controllers/front/contact.php');
+        contact();
     }
 } else {
     require('../controllers/front/homepage.php');

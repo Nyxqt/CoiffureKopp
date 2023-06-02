@@ -14,8 +14,9 @@
             <div class="col-lg-6">
                 <img class="w-100" src="<?= $post[0]['post_path'] ?>">
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 position-relative">
                 <p class="fs-5 text-ff"><?= $post[0]['post_content'] ?></p>
+                <p class="fs-5 text-ff fst-italic position-absolute bottom-0 end-0"><?= $post[0]['post_date'] ?></p>
             </div>
         </div>
     </div>

@@ -187,3 +187,7 @@ left: 0;
     width: 200px;
     margin: auto;
 }
+
+#floatingMessage {
+    height: 300px;
+}
