@@ -13,23 +13,28 @@
             <h2 class="title-ff fs-1">03 87 92 83 68</h2>
         </div>
         <div class="row mt-5">
-            <div class="col-lg-6">
-                <div class="form-floating mt-2">
-                    <input name="name" type="text" class="form-control" id="floatingName" placeholder="Votre nom" required>
-                    <label for="floatingName">Votre nom</label>
-                </div>
-                <div class="form-floating mt-2">
-                    <input name="email" type="email" class="form-control" id="floatingMail" placeholder="Votre email" required>
-                    <label for="floatingMail">Votre email</label>
-                </div>
-                <div class="form-floating mt-2">
-                    <input name="subject" type="text" class="form-control" id="floatingSubject" placeholder="Sujet" required>
-                    <label for="floatingSubject">Sujet</label>
-                </div>
-                <div class="form-floating mt-2">
-                    <input name="message" type="text" class="form-control" id="floatingMessage" placeholder="Votre message" required>
-                    <label for="floatingMessage">Votre message</label>
-                </div>
+            <div class="col-lg-6 text-center text-ff">
+                <form action="#" method="post">
+                    <div class="form-floating mt-2">
+                        <input name="name" type="text" class="form-control" id="floatingName" placeholder="Votre nom" required>
+                        <label for="floatingName">Votre nom</label>
+                    </div>
+                    <div class="form-floating mt-2">
+                        <input name="email" type="email" class="form-control" id="floatingMail" placeholder="Votre email" required>
+                        <label for="floatingMail">Votre email</label>
+                    </div>
+                    <div class="form-floating mt-2">
+                        <input name="subject" type="text" class="form-control" id="floatingSubject" placeholder="Sujet" required>
+                        <label for="floatingSubject">Sujet</label>
+                    </div>
+                    <div class="form-floating mt-2">
+                        <textarea name="message" class="form-control" id="floatingMessage" placeholder="Votre message" required></textarea>
+                        <label for="floatingMessage">Votre message</label>
+                    </div>
+                    <button name="submit" type="submit" class="btn btn-dark fs-5 uppercase mt-2">
+                        <span>envoyer</span>
+                    </button>
+                </form>
             </div>
             <div class="col-lg-6">
                 <p class="text-ff fw-bold fs-5 uppercase">Coiffure Kopp</p>
