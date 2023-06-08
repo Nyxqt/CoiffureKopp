@@ -23,8 +23,8 @@ if (isset($_SESSION['email'])) {
                 delAdmin($id);
             }
         } elseif ($_GET['action'] == 'content') {
-            require('../controllers/back/admin.php');
-            admin();
+            require('../controllers/back/content.php');
+            content();
         } elseif ($_GET['action'] == 'addContent') {
             require('../controllers/back/addContent.php');
             createContent($msg);

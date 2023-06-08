@@ -21,51 +21,27 @@
                 <span class="fs-4 ms-2">Gestion</span>
             </a>
             <hr>
-            <ul class="nav nav-pills flex-column mb-auto">
-                <li class="nav-item">
-                    <a href="index.php?action=home" class="nav-link text-white">
+            <ul class="nav flex-column mb-auto">
+                <li>
+                    <a href="index.php?action=home" class="nav-link text-ff uppercase text-white">
                         <i class="fa-solid fa-house"></i>
                         Accueil
                     </a>
                 </li>
                 <li>
-                    <a href="index.php?action=category&p=1" class="nav-link  hover_yellow">
-                        <i class="fa-solid fa-chevron-right"></i>
-                        Catégories
+                    <a href="index.php?action=portfolio&p=1" class="nav-link text-ff uppercase text-white">
+                        <i class="fa-regular fa-image"></i>
+                        Portfolio
                     </a>
                 </li>
                 <li>
-                    <a href="index.php?action=genre&p=1" class="nav-link  hover_yellow">
-                        <i class="fa-solid fa-chevron-right"></i>
-                        Genres
-                    </a>
-                </li>
-                <li>
-                    <a href="index.php?action=game&p=1" class="nav-link  hover_yellow">
-                        <i class="fa-solid fa-chevron-right"></i>
-                        Jeux
-                    </a>
-                </li>
-                <li>
-                    <a href="index.php?action=support&p=1" class="nav-link  hover_yellow">
-                        <i class="fa-solid fa-angles-right"></i>
-                        Support
-                    </a>
-                </li>
-                <li>
-                    <a href="index.php?action=edition&p=1" class="nav-link  hover_yellow">
-                        <i class="fa-solid fa-angles-right"></i>
-                        Edition
-                    </a>
-                </li>
-                <li>
-                    <a href="index.php?action=addContent" class="nav-link  hover_yellow">
+                    <a href="index.php?action=content" class="nav-link text-ff uppercase text-white">
                         <i class="fa-solid fa-image"></i>
                         Contenu
                     </a>
                 </li>
                 <li>
-                    <a href="index.php?action=admin&p=1" class="nav-link  hover_yellow">
+                    <a href="index.php?action=admin&p=1" class="nav-link text-ff uppercase text-white">
                         <i class="fa-solid fa-user"></i>
                         Administrateurs
                     </a>
