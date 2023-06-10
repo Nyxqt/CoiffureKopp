@@ -28,6 +28,11 @@ if (isset($_SESSION['email'])) {
         } elseif ($_GET['action'] == 'addContent') {
             require('../controllers/back/addContent.php');
             createContent($msg);
+        } elseif ($_GET['action'] == 'updContent') {
+            if (isset($_GET['id'])) {
+                require('../controllers/back/updContent.php');
+                showUpdContent();
+            }
         }
     } else {
         require('../controllers/back/dashboard.php');

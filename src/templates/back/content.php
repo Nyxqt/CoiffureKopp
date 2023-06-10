@@ -23,9 +23,9 @@
                         <th scope="row"><?= $content['title'] ?></th>
                         <td><?= $content['content'] ?></td>
                         <td><img class="back-img" src="<?= $content['path'] ?>" alt=""></td>
-                        <td><a class="btn btn-warning" href="index.php?action=updAdmin&id=<?= $content['id'] ?>" role="button">
+                        <td><a class="btn btn-warning" href="index.php?action=updContent&id=<?= $content['id'] ?>" role="button">
                                 <span>Modifier</span><i class="fa-solid fa-user-gear ms-2"></i></a>
-                            <a class="btn btn-danger" href="index.php?action=delAdmin&id=<?= $content['id'] ?>" onclick="return(confirm('Voulez-vous supprimer cette entrée ?'));" role="button">
+                            <a class="btn btn-danger" href="index.php?action=delContent&id=<?= $content['id'] ?>" onclick="return(confirm('Voulez-vous supprimer cette entrée ?'));" role="button">
                                 <span>Effacer</span><i class="fa-solid fa-user-minus ms-2"></i></a>
                         </td>
                     </tr>

@@ -30,7 +30,7 @@ function getContents()
 
     // SQL REQUEST ADMIN LIST
 
-    $statement = $db->query("SELECT * FROM post ORDER BY id LIMIT $offset, $per_page");
+    $statement = $db->query("SELECT * FROM post ORDER BY id DESC LIMIT $offset, $per_page");
     $contents = [];
     while (($row = $statement->fetch())) {
         $content = [
