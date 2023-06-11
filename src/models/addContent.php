@@ -22,10 +22,22 @@ if (isset($_POST['submit'])) {
                 $content = secureInput($_POST['content']);
                 $date = date("d/m/Y");
 
-                $query = dbConnect()->prepare("INSERT INTO post (title, content, path, date) VALUES (:title, :content, :path, :date)");
+                $queryImage = dbConnect()->prepare("INSERT INTO image (path) VALUES (:path)");
+                $queryImage->bindValue(':path', $path, PDO::PARAM_STR);
+                $queryImage->execute();
+
+                $statement = dbConnect()->query("SELECT * FROM image ORDER BY id DESC LIMIT 1");
+                while (($row = $statement->fetch())) {
+                    $imageData = [
+                        'id' => $row['id'],
+                        'path' => $row['path'],
+                    ];
+                }
+
+                $query = dbConnect()->prepare("INSERT INTO post (title, content, id_image, date) VALUES (:title, :content, :id_image, :date)");
                 $query->bindValue(':title', $title, PDO::PARAM_STR);
                 $query->bindValue(':content', $content, PDO::PARAM_STR);
-                $query->bindValue(':path', $path, PDO::PARAM_STR);
+                $query->bindValue(':id_image', $imageData['id'], PDO::PARAM_INT);
                 $query->bindValue(':date', $date, PDO::PARAM_STR);
                 $query->execute();
                 $msg = "Le contenu a bien été ajouté.";

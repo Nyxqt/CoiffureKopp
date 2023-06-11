@@ -28,7 +28,7 @@ function getContents()
     $next = $page + 1;
     $previous = $page - 1;
 
-    // SQL REQUEST ADMIN LIST
+    // SQL REQUEST CONTENT LIST
 
     $statement = $db->query("SELECT * FROM post ORDER BY id DESC LIMIT $offset, $per_page");
     $contents = [];
