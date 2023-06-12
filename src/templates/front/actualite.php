@@ -13,12 +13,12 @@
         <?php foreach ($actualite as $actu) { ?>
             <div class="row">
                 <div class="col-lg-6">
-                    <img class="w-100" src="<?= $actu['post_path'] ?>">
+                    <img class="w-100" src="<?= $actu['path'] ?>">
                 </div>
                 <div class="col-lg-6 text-center">
-                    <h1 class="title-ff"><?= $actu['post_title'] ?></h1>
-                    <p class="text-ff fs-5 fst-italic">Publié le <?= $actu['post_date'] ?>.</p>
-                    <a href="index.php?action=actualite&id=<?= $actu['post_id'] ?>" class="btn btn-dark fs-4 mt-5">Voir l'article</a>
+                    <h1 class="title-ff"><?= $actu['pTitle'] ?></h1>
+                    <p class="text-ff fs-5 fst-italic">Publié le <?= $actu['pDate'] ?>.</p>
+                    <a href="index.php?action=actualite&id=<?= $actu['pId'] ?>" class="btn btn-dark fs-4 mt-5">Voir l'article</a>
                 </div>
             </div>
         <?php } ?>

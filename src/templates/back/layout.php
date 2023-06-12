@@ -29,13 +29,13 @@
                     </a>
                 </li>
                 <li>
-                    <a href="index.php?action=portfolio&p=1" class="nav-link text-ff uppercase text-white">
+                    <a href="index.php?action=image&p=1" class="nav-link text-ff uppercase text-white">
                         <i class="fa-regular fa-image"></i>
                         Portfolio
                     </a>
                 </li>
                 <li>
-                    <a href="index.php?action=content" class="nav-link text-ff uppercase text-white">
+                    <a href="index.php?action=content&p=1" class="nav-link text-ff uppercase text-white">
                         <i class="fa-solid fa-image"></i>
                         Contenu
                     </a>

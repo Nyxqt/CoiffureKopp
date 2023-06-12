@@ -1,4 +1,4 @@
-<?php $title = "Actualité"; ?>
+<?php $title = "Images"; ?>
 <?php ob_start(); ?>
 
 <div class="container-fluid">
@@ -11,21 +11,19 @@
         <table class="table table-dark table-striped">
             <thead>
                 <tr>
-                    <th scope="col">Titre</th>
-                    <th scope="col">Contenu</th>
+                    <th scope="col">#</th>
                     <th scope="col">Image</th>
                     <th scope="col">Action</th>
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($data as $content) { ?>
+                <?php foreach ($data as $image) { ?>
                     <tr>
-                        <th scope="row"><?= $content['p.title'] ?></th>
-                        <td><?= $content['p.content'] ?></td>
-                        <td><img class="back-img" src="<?= $content['i.path'] ?>" alt=""></td>
-                        <td><a class="btn btn-warning" href="index.php?action=updContent&id=<?= $content['p.id'] ?>" role="button">
+                        <th scope="row"><?= $image['id'] ?></th>
+                        <td><img class="back-img" src="<?= $image['path'] ?>" alt=""></td>
+                        <td><a class="btn btn-warning" href="index.php?action=updContent&id=<?= $image['id'] ?>" role="button">
                                 <span>Modifier</span><i class="fa-solid fa-user-gear ms-2"></i></a>
-                            <a class="btn btn-danger" href="index.php?action=delContent&id=<?= $content['p.id'] ?>" onclick="return(confirm('Voulez-vous supprimer cette entrée ?'));" role="button">
+                            <a class="btn btn-danger" href="index.php?action=delContent&id=<?= $image['id'] ?>" onclick="return(confirm('Voulez-vous supprimer cette entrée ?'));" role="button">
                                 <span>Effacer</span><i class="fa-solid fa-user-minus ms-2"></i></a>
                         </td>
                     </tr>
@@ -39,15 +37,15 @@
                     <li class="page-item <?php if ($page == 1) {
                                                 echo 'disabled';
                                             } ?>">
-                        <a class="page-link" href="index.php?action=content&p=<?= $previous ?>" tabindex="-1" aria-disabled="true">Précédent</a>
+                        <a class="page-link" href="index.php?action=image&p=<?= $previous ?>" tabindex="-1" aria-disabled="true">Précédent</a>
                     </li>
                     <?php for ($i = $start; $i <= $end; $i++) { ?>
-                        <li class="page-item <?= ($page == $i) ? 'active" aria-current="page"' : '"' ?>><a class=" page-link" href="index.php?action=content&p=<?php echo $i; ?>"><?= $i; ?></a></li>
+                        <li class="page-item <?= ($page == $i) ? 'active" aria-current="page"' : '"' ?>><a class=" page-link" href="index.php?action=image&p=<?php echo $i; ?>"><?= $i; ?></a></li>
                     <?php } ?>
                     <li class="page-item <?php if ($page == $num_pages) {
                                                 echo 'disabled';
                                             } ?>">
-                        <a class="page-link" href="index.php?action=content&p=<?php echo $next ?>">Suivant</a>
+                        <a class="page-link" href="index.php?action=image&p=<?php echo $next ?>">Suivant</a>
                     </li>
                 </ul>
             </div>

@@ -1,7 +1,7 @@
 <?php $title = "Admin"; ?>
 <?php ob_start(); ?>
 
-<div class="container-fluid text-center">
+<div class="container-fluid">
     <div class="row">
         <div class="d-flex mt-3">
             <a class="btn btn-primary" href="index.php?action=addAdmin" role="button">

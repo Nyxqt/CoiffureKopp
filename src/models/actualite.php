@@ -3,9 +3,8 @@
 function getActualiteData()
 {
     $stmt = dbConnect()->prepare(
-        'SELECT p.title as post_title, p.path as post_path, p.date  as post_date, p.id as post_id
-    FROM post as p
-    ORDER BY id
+        'SELECT p.id as pId, p.title as pTitle, p.content as pContent, p.id_image as pId_image, p.date as pDate, i.path FROM post p INNER JOIN image i ON i.id = p.id_image
+    ORDER BY p.id
     DESC'
     );
     $stmt->execute();

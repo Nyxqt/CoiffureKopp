@@ -30,7 +30,7 @@ function getAdmins()
 
     // SQL REQUEST ADMIN LIST
 
-    $statement = $db->query("SELECT * FROM admin ORDER BY id LIMIT $offset, $per_page");
+    $statement = $db->query("SELECT * FROM admin ORDER BY id DESC LIMIT $offset, $per_page");
     $admins = [];
     while (($row = $statement->fetch())) {
         $admin = [

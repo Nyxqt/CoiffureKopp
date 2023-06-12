@@ -1,6 +1,6 @@
 <?php
 
-function getContents()
+function getImages()
 {
     // PAGINATION SYSTEM
     $db = dbConnect();
@@ -28,19 +28,16 @@ function getContents()
     $next = $page + 1;
     $previous = $page - 1;
 
-    // SQL REQUEST CONTENT LIST
+    // SQL REQUEST IMAGE LIST
 
-    $statement = $db->query("SELECT p.id as pId, p.title as pTitle, p.content as pContent, p.id_image as pId_image, i.path FROM post p INNER JOIN image i ON i.id = p.id_image ORDER BY p.id DESC LIMIT $offset, $per_page ");
-    $contents = [];
+    $statement = $db->query("SELECT * FROM image ORDER BY id DESC LIMIT $offset, $per_page ");
+    $images = [];
     while (($row = $statement->fetch())) {
-        $content = [
-            'p.id' => $row['pId'],
-            'p.title' => $row['pTitle'],
-            'p.content' => $row['pContent'],
-            'p.id_image' => $row['pId_image'],
-            'i.path' => $row['path'],
+        $image = [
+            'id' => $row['id'],
+            'path' => $row['path'],
         ];
-        $contents[] = $content;
+        $images[] = $image;
     }
-    return [$contents, $next, $previous, $page, $end, $num_pages, $start];
+    return [$images, $next, $previous, $page, $end, $num_pages, $start];
 }

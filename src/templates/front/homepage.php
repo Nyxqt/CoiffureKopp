@@ -79,10 +79,10 @@
 
                 <div class="col-md-4">
                     <div class="card rounded">
-                        <img class="img-fluid" src="<?= $news3['news_img'] ?>" alt="">
+                        <img class="img-fluid" src="<?= $news3['path'] ?>" alt="">
                         <div class="card-body">
-                            <h5 class="card-title text-ff fs-4"><?= $news3['news_title'] ?></h5>
-                            <a href="index.php?action=news&id=<?= $news3['news_id'] ?>" class="btn btn-dark text-ff">Voir l'article</a>
+                            <h5 class="card-title text-ff fs-4"><?= $news3['pTitle'] ?></h5>
+                            <a href="index.php?action=news&id=<?= $news3['pId'] ?>" class="btn btn-dark text-ff">Voir l'article</a>
                         </div>
                     </div>
                 </div>
