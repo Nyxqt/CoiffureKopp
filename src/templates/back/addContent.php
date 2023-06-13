@@ -1,4 +1,4 @@
-<?php $title = "Admin"; ?>
+<?php $title = "Contenu"; ?>
 <?php ob_start(); ?>
 <div class="container mt-5 text-center">
     <form action="" method="post" enctype="multipart/form-data">

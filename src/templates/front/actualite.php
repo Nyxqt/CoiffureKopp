@@ -12,8 +12,8 @@
     <div class="container-lg">
         <?php foreach ($actualite as $actu) { ?>
             <div class="row">
-                <div class="col-lg-6">
-                    <img class="w-100" src="<?= $actu['path'] ?>">
+                <div class="col-lg-6 text-center">
+                    <img class="news-img" src="<?= $actu['path'] ?>">
                 </div>
                 <div class="col-lg-6 text-center">
                     <h1 class="title-ff"><?= $actu['pTitle'] ?></h1>

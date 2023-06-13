@@ -4,7 +4,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="d-flex mt-3">
-            <a class="btn btn-primary" href="index.php?action=addContent" role="button">
+            <a class="btn btn-primary" href="index.php?action=addImage" role="button">
                 <i class="fa-solid fa-user-plus"></i>
                 <span class="ms-2">Ajouter</span></a>
         </div>

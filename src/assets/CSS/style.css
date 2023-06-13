@@ -195,3 +195,8 @@ left: 40%;
 .back-img {
     height: 150px;
 }
+
+.news-img {
+    max-height: 250px;
+    background-size: cover;
+}

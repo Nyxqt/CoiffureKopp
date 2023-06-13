@@ -42,9 +42,9 @@ if (isset($_SESSION['email'])) {
         } elseif ($_GET['action'] == 'image') {
             require('../controllers/back/image.php');
             image();
-        } elseif ($_GET['action'] == 'addContent') {
-            require('../controllers/back/addContent.php');
-            createContent($msg);
+        } elseif ($_GET['action'] == 'addImage') {
+            require('../controllers/back/addImage.php');
+            createImage($msg);
         } elseif ($_GET['action'] == 'updContent') {
             if (isset($_GET['id'])) {
                 require('../controllers/back/updContent.php');
