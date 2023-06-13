@@ -4,7 +4,7 @@
 <!-- HIGHLIGHT -->
 <section>
     <div class="container parallax-salon" id="salon-highlight">
-        <h1 class="highlight-ff text-center text-white">L'EQUIPE</h1>
+        <h1 class="highlight-ff text-center text-white uppercase">L'Actualité</h1>
     </div>
 </section>
 <!-- MAIN CONTENT -->

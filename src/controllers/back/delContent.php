@@ -6,5 +6,5 @@ require_once('../models/delContent.php');
 function delContent($id)
 {
     deleteContent($id);
-    header('Location: index.php?action=admin&p=1');
+    header('Location: index.php?action=content&p=1');
 }

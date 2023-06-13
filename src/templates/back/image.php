@@ -21,9 +21,8 @@
                     <tr>
                         <th scope="row"><?= $image['id'] ?></th>
                         <td><img class="back-img" src="<?= $image['path'] ?>" alt=""></td>
-                        <td><a class="btn btn-warning" href="index.php?action=updContent&id=<?= $image['id'] ?>" role="button">
-                                <span>Modifier</span><i class="fa-solid fa-user-gear ms-2"></i></a>
-                            <a class="btn btn-danger" href="index.php?action=delContent&id=<?= $image['id'] ?>" onclick="return(confirm('Voulez-vous supprimer cette entrée ?'));" role="button">
+                        <td>
+                            <a class="btn btn-danger" href="index.php?action=delImage&id=<?= $image['id'] ?>" onclick="return(confirm('Voulez-vous supprimer cette entrée ?'));" role="button">
                                 <span>Effacer</span><i class="fa-solid fa-user-minus ms-2"></i></a>
                         </td>
                     </tr>

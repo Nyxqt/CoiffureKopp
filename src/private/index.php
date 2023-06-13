@@ -45,16 +45,11 @@ if (isset($_SESSION['email'])) {
         } elseif ($_GET['action'] == 'addImage') {
             require('../controllers/back/addImage.php');
             createImage($msg);
-        } elseif ($_GET['action'] == 'updContent') {
-            if (isset($_GET['id'])) {
-                require('../controllers/back/updContent.php');
-                showUpdContent();
-            }
-        } elseif ($_GET['action'] == 'delContent') {
+        } elseif ($_GET['action'] == 'delImage') {
             if (isset($_GET['id'])) {
                 $id = intval($_GET['id']);
-                require('../controllers/back/delContent.php');
-                delContent($id);
+                require('../controllers/back/delImage.php');
+                delImage($id);
             }
         }
     } else {
