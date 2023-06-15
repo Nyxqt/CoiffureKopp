@@ -28,15 +28,6 @@ nav {
     text-transform: uppercase;
 }
 
-.body-wrapper {
-	position: relative;
-	min-height: 100vh;
-}
-
-#body-wrapper {
-	padding-bottom: 350px;
-}
-
 .nav-style {
 color: #fff;
 display: inline-block;
@@ -55,6 +46,10 @@ position: absolute;
 background: #fff;
 transition: width 0.3s ease 0s, left 0.3s ease 0s;
 width: 0;
+}
+
+.nav-style:hover {
+    color: white;
 }
 
 .nav-style:hover:after { 

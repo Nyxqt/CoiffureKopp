@@ -8,7 +8,7 @@
     </div>
 </section>
 <!-- MAIN CONTENT -->
-<section class=" mt-5">
+<section class=" mt-5 pb-5">
     <div class="container-lg">
         <?php foreach ($actualite as $actu) { ?>
             <div class="row">

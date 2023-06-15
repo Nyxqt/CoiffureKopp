@@ -3,7 +3,7 @@
 <!-- HIGHLIGHT -->
 <section>
     <div class="container parallax-salon" id="salon-highlight">
-        <h1 class="highlight-ff text-center text-white">Nous contacter</h1>
+        <h1 class="highlight-ff text-center text-white uppercase">Nous contacter</h1>
     </div>
 </section>
 <section class="mt-5">

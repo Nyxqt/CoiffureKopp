@@ -19,19 +19,15 @@ require('footer.php');
 ?>
 
 <body>
-    <div class="body-wrapper">
-        <div id="body-wrapper">
-            <header class="sticky-top">
-                <?= $header ?>
-            </header>
-            <main>
-                <?= $content ?>
-            </main>
-            <footer class="position-absolute bottom-0">
-                <?= $footer ?>
-            </footer>
-        </div>
-    </div>
+    <header class="sticky-top">
+        <?= $header ?>
+    </header>
+    <main>
+        <?= $content ?>
+    </main>
+    <footer class="mt-5">
+        <?= $footer ?>
+    </footer>
 
     <?php require('../assets/lib/externalsJS.php') ?>
     <script src="../assets/js/navbar.js"></script>

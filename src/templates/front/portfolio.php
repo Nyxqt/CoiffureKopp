@@ -13,7 +13,7 @@
 ?>
 <section class="mt-5">
     <div class="container-fluid-lg">
-        <div class="row align-items-center">
+        <div class="row align-items-center p-0 m-0">
             <?php foreach ($images as $image) { ?>
                 <div class="col-lg-2">
                     <a target="_blank" href="index.php?action=picture&id=<?= $image['id'] ?>">
