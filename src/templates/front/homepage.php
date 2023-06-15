@@ -60,7 +60,7 @@
 
                     Nos marques partenaires, Kevin Murphy et Redken, reflètent notre positionnement créatif, technique et respectueux de notre nature et celle du cheveu.
                 </p>
-                <a href="#" class="btn btn-light fs-4" role="button" data-bs-toggle="button">Contact</a>
+                <a href="index.php?action=contact" class="btn btn-light fs-4" role="button" data-bs-toggle="button">Contact</a>
             </div>
         </div>
     </div>
@@ -82,7 +82,7 @@
                         <img class="img-fluid" src="<?= $news3['path'] ?>" alt="">
                         <div class="card-body">
                             <h5 class="card-title text-ff fs-4"><?= $news3['pTitle'] ?></h5>
-                            <a href="index.php?action=news&id=<?= $news3['pId'] ?>" class="btn btn-dark text-ff">Voir l'article</a>
+                            <a href="index.php?action=actualite&id=<?= $news3['pId'] ?>" class="btn btn-dark text-ff" role="button">Voir l'article</a>
                         </div>
                     </div>
                 </div>

@@ -9,14 +9,14 @@
 <!-- MAIN CONTENT -->
 <section class="mt-5">
     <div class="container-lg">
-        <h1 class="title-ff text-center"><?= $post[0]['post_title'] ?></h1>
+        <h1 class="title-ff text-center"><?= $post[0]['pTitle'] ?></h1>
         <div class="row">
             <div class="col-lg-6">
-                <img class="w-100" src="<?= $post[0]['post_path'] ?>">
+                <img class="img-fluid" src="<?= $post[0]['path'] ?>">
             </div>
             <div class="col-lg-6 position-relative">
-                <p class="fs-5 text-ff"><?= $post[0]['post_content'] ?></p>
-                <p class="fs-5 text-ff fst-italic position-absolute bottom-0 end-0"><?= $post[0]['post_date'] ?></p>
+                <p class="fs-5 text-ff"><?= $post[0]['pContent'] ?></p>
+                <p class="fs-5 text-ff fst-italic position-absolute bottom-0 end-0"><?= $post[0]['pDate'] ?></p>
             </div>
         </div>
     </div>

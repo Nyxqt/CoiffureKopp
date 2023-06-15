@@ -22,6 +22,16 @@ if (isset($_GET['action'])) {
     } elseif ($_GET['action'] == 'contact') {
         require('../controllers/front/contact.php');
         contact();
+    } elseif ($_GET['action'] == 'portfolio') {
+        if (isset($_GET['p'])) {
+            require('../controllers/front/portfolio.php');
+            portfolio();
+        }
+    } elseif ($_GET['action'] == 'picture') {
+        if (isset($_GET['id'])) {
+            require('../controllers/front/picture.php');
+            picture();
+        }
     }
 } else {
     require('../controllers/front/homepage.php');

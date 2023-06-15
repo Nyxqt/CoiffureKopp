@@ -17,7 +17,7 @@
                     <a class="nav-link title-ff title-fs nav-style" href="index.php?action=equipe">L'équipe</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link title-ff title-fs nav-style" href="index.php?action=portfolio">Portfolio</a>
+                    <a class="nav-link title-ff title-fs nav-style" href="index.php?action=portfolio&p=1">Portfolio</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link title-ff title-fs nav-style" href="index.php?action=actualite">Actualité</a>

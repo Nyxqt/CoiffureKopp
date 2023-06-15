@@ -6,7 +6,7 @@ require_once('../models/portfolio.php');
 
 function portfolio()
 {
-    $data = getAdmins();
+    $data = getPictures();
     $images = $data[0];
     $previous = $data[1];
     $next = $data[2];

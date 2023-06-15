@@ -3,7 +3,7 @@
 function getPictures()
 {
     // PAGINATION SYSTEM
-    $per_page = 20;
+    $per_page = 6;
     $page = 1;
     if (isset($_GET['p']) && !empty($_GET['p'])) {
         $page = intval($_GET['p']);
@@ -15,7 +15,7 @@ function getPictures()
     $nb_pagination = 3;
     $offset = ($page - 1) * $per_page;
 
-    $total_query = "SELECT COUNT(*) as total FROM picture";
+    $total_query = "SELECT COUNT(*) as total FROM image";
     $total_result = dbConnect()->query($total_query);
     $total_row = $total_result->fetch();
     $total = $total_row['total'];
@@ -29,7 +29,7 @@ function getPictures()
 
     // SQL REQUEST ADMIN LIST
 
-    $statement = dbConnect()->query("SELECT * FROM picture ORDER BY id DESC LIMIT $offset, $per_page");
+    $statement = dbConnect()->query("SELECT * FROM image ORDER BY id DESC LIMIT $offset, $per_page");
     $pictures = [];
     while (($row = $statement->fetch())) {
         $picture = [
