@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="HTML, CSS, JavaScript, SQL">
+    <meta name="keywords" content="HTML, CSS, JavaScript, SQL, PHP">
     <meta name="description" content="Site vitrine pour Coiffure Kopp à Saint-Avold">
     <meta name="author" content="Zinedine Geiss">
     <meta name="referrer" content="no-referrer-when-downgrade">
