@@ -81,7 +81,7 @@
                     <div class="card rounded">
                         <img class="img-fluid" src="<?= $news3['path'] ?>" alt="">
                         <div class="card-body">
-                            <h5 class="card-title text-ff fs-4"><?= $news3['pTitle'] ?></h5>
+                            <h2 class="card-title text-ff fs-4"><?= $news3['pTitle'] ?></h2>
                             <a href="index.php?action=actualite&id=<?= $news3['pId'] ?>" class="btn btn-dark text-ff" role="button">Voir l'article</a>
                         </div>
                     </div>
