@@ -10,7 +10,7 @@
         </button>
         <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
 
-            <ul class="navbar-nav">
+            <ul class="navbar-nav gap-5">
                 <li class="nav-item">
                     <a class="nav-link title-ff title-fs nav-style" href="index.php?action=salon">Le salon</a>
                 </li>
