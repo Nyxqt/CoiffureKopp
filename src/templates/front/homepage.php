@@ -2,11 +2,11 @@
 <?php ob_start(); ?>
 <!-- CAROUSEL -->
 <section>
-    <div class="container-md">
+    <div class="container-lg">
         <div id="carousel" class="carousel slide" data-bs-ride="carousel">
             <div id="carouselDiv" class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="../assets/images/carousel-1.jpg" class="carousel-img" alt="...">
+                    <img src="../assets/images/carousel1.jpg" class="carousel-img" alt="...">
                 </div>
                 <div class="carousel-item">
                     <img src="../assets/images/carousel2.jpg" class="carousel-img" alt="...">

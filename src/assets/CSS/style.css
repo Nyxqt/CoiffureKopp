@@ -23,6 +23,12 @@ nav {
 	object-fit: cover;
 }
 
+@media (max-width: 768px) {
+	.carousel-img{
+		max-height: 450px;
+	}
+}
+
 .highlight-ff {
 	font-family: "Josefin Sans", sans-serif;
 }
