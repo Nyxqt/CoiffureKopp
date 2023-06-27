@@ -1,197 +1,204 @@
 body {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 nav {
-    background: black;
-    z-index: 99;
+	background: black;
+	z-index: 99;
 }
 
 .text-ff {
-    font-family: 'Quicksand', sans-serif;
+	font-family: "Quicksand", sans-serif;
 }
 
 .title-ff {
-    font-family: 'Indie Flower', cursive;
+	font-family: "Indie Flower", cursive;
+}
+
+.carousel-img {
+	float: left;
+	width: 100%;
+	max-height: 800px;
+	object-fit: cover;
 }
 
 .highlight-ff {
-    font-family: 'Josefin Sans', sans-serif;;
+	font-family: "Josefin Sans", sans-serif;
 }
 
 .title-fs {
-    font-size: 3em;
+	font-size: 3em;
 }
 
 .uppercase {
-    text-transform: uppercase;
+	text-transform: uppercase;
 }
 
 .nav-style {
-color: #fff;
-display: inline-block;
-text-decoration: none;
-position: relative;
+	color: #fff;
+	display: inline-block;
+	text-decoration: none;
+	position: relative;
 }
 
-.nav-style:after {    
-background: none repeat scroll 0 0 transparent;
-bottom: 0;
-content: "";
-display: block;
-height: 2px;
-left: 50%;
-position: absolute;
-background: #fff;
-transition: width 0.3s ease 0s, left 0.3s ease 0s;
-width: 0;
+.nav-style:after {
+	background: none repeat scroll 0 0 transparent;
+	bottom: 0;
+	content: "";
+	display: block;
+	height: 2px;
+	left: 50%;
+	position: absolute;
+	background: #fff;
+	transition: width 0.3s ease 0s, left 0.3s ease 0s;
+	width: 0;
 }
 
 .nav-style:hover {
-    color: white;
+	color: white;
 }
 
-.nav-style:hover:after { 
-width: 100%; 
-left: 0; 
+.nav-style:hover:after {
+	width: 100%;
+	left: 0;
 }
 
 #navbarCollapse {
-    padding: 0 0 30px 0;
-    transition: ease-in 0.4s;
+	padding: 0 0 30px 0;
+	transition: ease-in 0.4s;
 }
 
 .content-img {
-    height: 600px;
+	height: 600px;
 }
 
 h1 {
-padding: 30px 0 8px;
-position: relative;
+	padding: 30px 0 8px;
+	position: relative;
 }
 
 h1::before {
-content: "";
-position: absolute;
-left: 50%;
-bottom: 16px;
-width: 150px;
-height: 14px;
-transform: skew(-25deg) translateX(-50%);
-background: rgba(37, 113, 236, 0.576);
-z-index: -1;
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: 16px;
+	width: 150px;
+	height: 14px;
+	transform: skew(-25deg) translateX(-50%);
+	background: rgba(37, 113, 236, 0.576);
+	z-index: -1;
 }
 
 .text-divider {
-display: flex;
-align-items: center;
---text-divider-gap: 1rem;
+	display: flex;
+	align-items: center;
+	--text-divider-gap: 1rem;
 }
 
 .text-divider::before,
 .text-divider::after {
-content: '';
-height: 1px;
-background-color: silver;
-flex-grow: 1;
+	content: "";
+	height: 1px;
+	background-color: silver;
+	flex-grow: 1;
 }
 
 .text-divider::before {
-margin-right: var(--text-divider-gap);
+	margin-right: var(--text-divider-gap);
 }
 
 .text-divider::after {
-margin-left: var(--text-divider-gap);
+	margin-left: var(--text-divider-gap);
 }
 
 h2 {
-padding: 30px 0 8px;
-position: relative;
+	padding: 30px 0 8px;
+	position: relative;
 }
 
 h2::before {
-content: "";
-position: absolute;
-left: 50%;
-bottom: 15px;
-width: 150px;
-height: 14px;
-transform: skew(-25deg) translateX(-50%);
-background: rgba(31, 228, 97, 0.576);
-z-index: -1;
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: 15px;
+	width: 150px;
+	height: 14px;
+	transform: skew(-25deg) translateX(-50%);
+	background: rgba(31, 228, 97, 0.576);
+	z-index: -1;
 }
 
 .parallax-homepage {
-    background-image: url("../images/parallax2.jpg");
-    min-height: 100px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; 
+	background-image: url("../images/parallax2.jpg");
+	min-height: 100px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .parallax-salon {
-    background-image: url("../images/salon_highlight.jpg");
-    min-height: 100px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain; 
+	background-image: url("../images/salon_highlight.jpg");
+	min-height: 100px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 .text-italic {
-    font-style: italic;
+	font-style: italic;
 }
 
 footer {
-    width: 100%;
+	width: 100%;
 }
 
 .footer-style {
-color: #fff;
-display: inline-block;
-position: relative;
+	color: #fff;
+	display: inline-block;
+	position: relative;
 }
 
-.footer-style:after {    
-background: none repeat scroll 0 0 transparent;
-bottom: 0;
-content: "";
-display: block;
-height: 2px;
-left: 50%;
-position: absolute;
-background: #fff;
-transition: width 0.3s ease 0s, left 0.3s ease 0s;
-width: 0;
+.footer-style:after {
+	background: none repeat scroll 0 0 transparent;
+	bottom: 0;
+	content: "";
+	display: block;
+	height: 2px;
+	left: 50%;
+	position: absolute;
+	background: #fff;
+	transition: width 0.3s ease 0s, left 0.3s ease 0s;
+	width: 0;
 }
 
-.footer-style:hover:after { 
-width: 20%; 
-left: 40%; 
+.footer-style:hover:after {
+	width: 20%;
+	left: 40%;
 }
 
 #salon-highlight {
-    height: 35vh;
+	height: 35vh;
 }
 
 .member-img {
-    display: inline-block;
-    height: 200px;
-    width: 200px;
-    margin: auto;
+	display: inline-block;
+	height: 200px;
+	width: 200px;
+	margin: auto;
 }
 
 #floatingMessage {
-    height: 300px;
+	height: 300px;
 }
 
 .back-img {
-    height: 150px;
+	height: 150px;
 }
 
 .news-img {
-    max-height: 250px;
-    background-size: cover;
+	max-height: 250px;
+	background-size: cover;
 }
