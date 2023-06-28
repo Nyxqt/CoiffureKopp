@@ -22,7 +22,7 @@
 
                                 <div class="input-group form-outline form-white mb-0">
                                     <input name="password" type="password" id="password" class="form-control form-control-lg" required />
-                                    <span class="input-group-text" id="show_password" onclick="password_show_hide();">
+                                    <span class="input-group-text" id="show_password">
                                         <i class="fa-regular fa-eye-slash" id="show_eye"></i>
                                         <i class="fa-regular fa-eye d-none" id="hide_eye"></i>
                                     </span>

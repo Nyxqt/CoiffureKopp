@@ -46,6 +46,18 @@
                         Administrateurs
                     </a>
                 </li>
+                <li>
+                    <a href="index.php?action=schedule" class="nav-link text-ff uppercase text-white">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        Horaires
+                    </a>
+                </li>
+                <li>
+                    <a href="index.php?action=equipe" class="nav-link text-ff uppercase text-white">
+                        <i class="fa-solid fa-people-group"></i>
+                        L'équipe
+                    </a>
+                </li>
             </ul>
             <hr>
             <div class="dropdown">
@@ -71,7 +83,7 @@
     </div>
 
     <?php require('../assets/lib/externalsJS.php') ?>
-    <script src="../assets/js/login.js"></script>
+    
 </body>
 
 </html>

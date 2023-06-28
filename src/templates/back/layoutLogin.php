@@ -10,6 +10,7 @@
 <body>
     <?= $content ?>
     <?php require('../assets/lib/externalsJS.php') ?>
+    <script src="../assets/js/login.js"></script>
 </body>
 
 </html>

@@ -51,7 +51,20 @@ if (isset($_SESSION['email'])) {
                 require('../controllers/back/delImage.php');
                 delImage($id);
             }
+        } elseif ($_GET['action'] == 'schedule') {
+            require('../controllers/back/schedule.php');
+            schedule();
+        } elseif ($_GET['action'] == 'addSchedule') {
+            require('../controllers/back/addSchedule.php');
+            createSchedule($msg);
+        } elseif ($_GET['action'] == 'delImage') {
+            if (isset($_GET['id'])) {
+                $id = intval($_GET['id']);
+                require('../controllers/back/delImage.php');
+                delImage($id);
+            }
         }
+        
     } else {
         require('../controllers/back/dashboard.php');
         dashboard();
