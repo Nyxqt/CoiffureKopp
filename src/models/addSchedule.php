@@ -19,8 +19,8 @@ if (isset($_POST['submit'])) {
 
         $query = dbConnect()->prepare("INSERT INTO schedule (day, opening, closing) VALUES (:day, :opening, :closing)");
         $query->bindValue(':day', $day, PDO::PARAM_STR);
-        $query->bindValue(':opening', $opening, PDO::PARAM_INT);
-        $query->bindValue(':closing', $closing, PDO::PARAM_INT);
+        $query->bindValue(':opening', $opening);
+        $query->bindValue(':closing', $closing);
         $query->execute();
         $msg = "Le contenu a bien été ajouté.";
     }

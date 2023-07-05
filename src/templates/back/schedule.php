@@ -1,4 +1,4 @@
-<?php $title = "Actualité"; ?>
+<?php $title = "Horaires"; ?>
 <?php ob_start(); ?>
 
 <div class="container-fluid">
@@ -12,8 +12,7 @@
             <thead>
                 <tr>
                     <th scope="col">Jour</th>
-                    <th scope="col">Ouverture</th>
-                    <th scope="col">Fermeture</th>
+                    <th scope="col">Etat</th>
                     <th scope="col">Action</th>
                 </tr>
             </thead>
@@ -21,8 +20,7 @@
                 <?php foreach ($data as $schedule) { ?>
                     <tr>
                         <th scope="row"><?= $schedule['day'] ?></th>
-                        <td><?= $schedule['opening'] ?></td>
-                        <td><?= $schedule['closing'] ?></td>
+                        <td><?= $schedule['status'] ?></td>
                         <td><a class="btn btn-warning" href="index.php?action=updSchedule&id=<?= $schedule['id'] ?>" role="button">
                                 <span>Modifier</span><i class="fa-solid fa-user-gear ms-2"></i></a>
                             <a class="btn btn-danger" href="index.php?action=delSchedule&id=<?= $schedule['id'] ?>" onclick="return(confirm('Voulez-vous supprimer cette entrée ?'));" role="button">

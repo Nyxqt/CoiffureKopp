@@ -57,11 +57,10 @@ if (isset($_SESSION['email'])) {
         } elseif ($_GET['action'] == 'addSchedule') {
             require('../controllers/back/addSchedule.php');
             createSchedule($msg);
-        } elseif ($_GET['action'] == 'delImage') {
+        } elseif ($_GET['action'] == 'updSchedule') {
             if (isset($_GET['id'])) {
-                $id = intval($_GET['id']);
-                require('../controllers/back/delImage.php');
-                delImage($id);
+                require('../controllers/back/updSchedule.php');
+                showUpdSchedule();
             }
         }
         

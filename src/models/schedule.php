@@ -36,8 +36,7 @@ function getSchedules()
         $schedule = [
             'id' => $row['id'],
             'day' => $row['day'],
-            'opening' => $row['opening'],
-            'closing' => $row['closing'],
+            'status' => $row['status'],
         ];
         $schedules[] = $schedule;
     }

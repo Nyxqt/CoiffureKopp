@@ -5,7 +5,7 @@
         <div class="row mb-3 justify-content-center align-items-center">
             <div class="col-sm-6">
                 <div class="form-floating">
-                    <textarea id="dayInput" type="text" placeholder="Jour" class="form-control" name="day"></textarea>
+                    <textarea id="dayInput" type="text" placeholder="Jour" class="form-control" name="day"><?= $schedule['day'] ?></textarea>
                     <label for="dayInput" class="floatingTextarea">Jour</label>
                 </div>
             </div>
@@ -37,8 +37,7 @@
             </div>
         </div>
         <div class="row justify-content-center align-items-center flex-column gap-3">
-            <div class="col"><button type="submit" name="submit" class="btn btn-primary">Envoyé</button></div>
-            <div class="col-sm-4"><?= $msg ?></div>
+            <div class="col"><button type="submit" name="upd" class="btn btn-primary">Envoyé</button></div>
         </div>
     </form>
 </div>
