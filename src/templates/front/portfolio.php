@@ -16,7 +16,7 @@
         <div class="row align-items-center p-0 m-0">
             <?php foreach ($images as $image) { ?>
                 <div class="col-lg-2">
-                    <a target="_blank" href="index.php?action=picture&id=<?= $image['id'] ?>">
+                    <a href="<?= $image['path'] ?>" data-lightbox="Galerie" data-title="Image <?= $image['id'] ?>">
                         <img class="img-fluid" src="<?= $image['path'] ?>">
                     </a>
                 </div>

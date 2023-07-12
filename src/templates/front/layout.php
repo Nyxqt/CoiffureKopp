@@ -35,7 +35,7 @@ require('footer.php');
     </footer>
 
     <?php require('../assets/lib/externalsJS.php') ?>
-    <script src="../assets/js/navbar.js"></script>
+    <script src="../assets/js/lightbox.js"></script>
 </body>
 
 </html>

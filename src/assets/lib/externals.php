@@ -6,3 +6,4 @@
 <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Josefin+Sans&family=Quicksand&display=swap" rel="stylesheet">
 <!-- CSS STYLE -->
 <link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/lightbox.css">
