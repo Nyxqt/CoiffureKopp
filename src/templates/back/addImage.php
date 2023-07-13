@@ -5,7 +5,7 @@
         <div class="row mb-3 justify-content-center align-items-center">
             <div class="col-sm-6">
                 <div class="input-group mb-3">
-                    <input type="file" class="form-control" name="path[]" id="pathInput" multiple>
+                    <input type="file" class="form-control" name="path" id="pathInput">
                     <label class="input-group-text" for="pathInput">Upload</label>
                 </div>
             </div>

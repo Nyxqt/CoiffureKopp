@@ -19,8 +19,15 @@
 <!-- REQUIRE HEADER + FOOTER -->
 
 <?php
+require('../models/footer.php');
+$schedule = getScheduleData();
+
 require('header.php');
 require('footer.php');
+
+// REQUIRE MODEL
+
+
 ?>
 
 <body>
